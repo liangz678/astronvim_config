@@ -21,7 +21,6 @@ return {
     },
   },
   { import = "astrocommunity.completion.cmp-cmdline" },
-
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.motion.vim-matchup" },
   { import = "astrocommunity.motion.leap-nvim" },
@@ -35,6 +34,7 @@ return {
   { import = "astrocommunity.pack.dart" },
   { import = "astrocommunity.pack.typst" },
 
+  { import = "astrocommunity.editing-support.vim-move" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.nvim-context-vt" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },

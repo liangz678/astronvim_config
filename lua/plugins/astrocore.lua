@@ -59,8 +59,8 @@ return {
 					end,
 				},
 
-				["<M-j>"] = { ":m .+1<CR>==" },
-				["<M-k>"] = { ":m .-2<CR>==" },
+				-- ["<M-j>"] = { ":m .+1<CR>==" },
+				-- ["<M-k>"] = { ":m .-2<CR>==" },
 
 				-- mappings seen under group name "Buffer"
 				["<Leader>bD"] = {
@@ -81,14 +81,14 @@ return {
 				["H"] = { "^" },
 				["L"] = { "$" },
 			},
-			x = {
-				["<M-j>"] = { ":m '>+1<CR>gv-gv" },
-				["<M-k>"] = { ":m '<lt>-2<CR>gv-gv" },
-			},
-			i = {
-				["<M-j>"] = { "<Esc>:m .+1<CR>==gi" },
-				["<M-k>"] = { "<Esc>:m .-2<CR>==gi" },
-			},
+			-- x = {
+			-- 	["<M-j>"] = { ":m '>+1<CR>gv-gv" },
+			-- 	["<M-k>"] = { ":m '<lt>-2<CR>gv-gv" },
+			-- },
+			-- i = {
+			-- 	["<M-j>"] = { "<Esc>:m .+1<CR>==gi" },
+			-- 	["<M-k>"] = { "<Esc>:m .-2<CR>==gi" },
+			-- },
 			t = {
 				-- setting a mapping to false will disable it
 				-- ["<esc>"] = false,

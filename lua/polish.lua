@@ -33,3 +33,6 @@ vim.cmd([[
   autocmd VimLeave * :silent: :!im-select.exe 2052
 
   ]])
+
+vim.api.nvim_set_keymap('v', '<CR>', ':lua require"nvim-treesitter.incremental_selection".node_incremental()<CR>', {noremap=true, silent=true})
+vim.api.nvim_set_keymap('v', '<BS>', ':lua require"nvim-treesitter.incremental_selection".node_decremental()<CR>', {noremap=true, silent=true})
