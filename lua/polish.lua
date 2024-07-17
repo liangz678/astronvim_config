@@ -16,13 +16,13 @@
 -- }
 
 require("lspconfig").typst_lsp.setup({
-  root_dir = function()
-    return vim.fn.getcwd()
-  end,
-  settings = {
-    exportPdf = "onType", -- Choose onType, onSave or never.
-    -- serverPath = "" -- Normally, there is no need to uncomment it.
-  },
+	root_dir = function()
+		return vim.fn.getcwd()
+	end,
+	settings = {
+		exportPdf = "onType", -- Choose onType, onSave or never.
+		-- serverPath = "" -- Normally, there is no need to uncomment it.
+	},
 })
 
 vim.cmd([[
@@ -33,6 +33,3 @@ vim.cmd([[
   autocmd VimLeave * :silent: :!im-select.exe 2052
 
   ]])
-
-vim.api.nvim_set_keymap('v', '<CR>', ':lua require"nvim-treesitter.incremental_selection".node_incremental()<CR>', {noremap=true, silent=true})
-vim.api.nvim_set_keymap('v', '<BS>', ':lua require"nvim-treesitter.incremental_selection".node_decremental()<CR>', {noremap=true, silent=true})
