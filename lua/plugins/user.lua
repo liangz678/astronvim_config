@@ -109,4 +109,17 @@ return {
 			})
 		end,
 	},
+	{
+		"chomosuke/typst-preview.nvim",
+		ft = "typst",
+		opts = {
+			debug = true,
+			dependencies_bin = {
+				["typst-preview"] = "tinymist",
+			},
+		},
+		build = function()
+			require("typst-preview").update()
+		end,
+	},
 }
