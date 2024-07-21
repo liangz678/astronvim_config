@@ -15,17 +15,6 @@
 --   },
 -- }
 
-require("lspconfig").tinymist.setup({
-  root_dir = function()
-    return vim.fn.getcwd()
-  end,
-  settings = {
-    exportPdf = "onType", -- Choose onType, onSave or never.
-    -- serverPath = "" -- Normally, there is no need to uncomment it.
-    outputPath = "$root/target/$dir/$name",
-  },
-})
-
 vim.cmd([[
   autocmd BufEnter *.slint :setlocal filetype=slint
   " autocmd VimEnter * !im-select.exe 1033
