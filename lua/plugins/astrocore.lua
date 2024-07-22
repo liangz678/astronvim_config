@@ -32,6 +32,7 @@ return {
 				wrap = true, -- sets vim.opt.wrap
 				showbreak = "↪",
 				tabstop = 4,
+				clipboard = "",
 			},
 			g = { -- vim.g.<key>
 				-- configure global vim variables (vim.g)
@@ -47,6 +48,8 @@ return {
 				-- second key is the lefthand side of the map
 
 				-- navigate buffer tabs with `H` and `L`
+				["<leader>y"] = { '"+y' },
+				["<leader>yy"] = { '"+yy' },
 				H = { "^" },
 				L = { "$" },
 				["<leader>k"] = {
@@ -61,7 +64,7 @@ return {
 				},
 				["<Leader>uI"] = {
 					function()
-						vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+						-- vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 					end,
 					desc = "Toggle to inlay_hint",
 				},
@@ -84,6 +87,8 @@ return {
 				-- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 			},
 			v = {
+				["<leader>y"] = { '"+y' },
+				["<leader>yy"] = { '"+yy' },
 				["H"] = { "^" },
 				["L"] = { "$" },
 			},
