@@ -33,7 +33,7 @@ return {
 	{ import = "astrocommunity.pack.rust" },
 	{ import = "astrocommunity.pack.python" },
 	-- { import = "astrocommunity.pack.dart" },
-	-- { import = "astrocommunity.pack.typst" },
+	{ import = "astrocommunity.pack.typst" },
 
 	{ import = "astrocommunity.editing-support.vim-move" },
 	{ import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
